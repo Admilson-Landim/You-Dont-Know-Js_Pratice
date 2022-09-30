@@ -1,7 +1,7 @@
 
 // Iniciando Pratica: You Dont Know JS /*  */
-var amount = 99.99;
 
+const TAX_RATE = 0.08;
 
 
 function antesFuncção() {
@@ -62,7 +62,6 @@ function testeWhile(){
 
 }
 
-
 function printAmount(amt){
     console.log(amt.toFixed(2));
 }
@@ -71,11 +70,91 @@ function formatAmount(){
     return "$" + amount.toFixed(2);
 }
 
-printAmount(amount * 2);
+function calculateFinalPurchaseAmount(amt){
+    // calculando o novo amount adicionando taxa
 
-amount = formatAmount();
+    amt = amt + (amt * TAX_RATE);
 
-console.log(amount);
+    // retorne o novo amount 
+    return amt;
+}
+
+var amount = 99.99;
+
+amount = calculateFinalPurchaseAmount(amount);
+
+//console.log(amount);
+
+
+function outer(){
+    var a = 1;
+
+    function inner(){
+        var b = 2;
+
+        console.log(a+b);
+    }
+
+    inner();
+
+    console.log(a);
+    
+}
+
+
+
+function praticeExercice(){
+
+    // compra movel e acessorios enquanto teni cash, 
+
+    const taxa_imposto = 0.01;
+    const preco_telemove = 10;
+    const preco_acessorio = 2;
+    const limite_gasto = 10;
+    var saldo_banco = 80;
+    var phones = 0;
+    var acessorios = 0;
+    var gasto = 0;
+
+    function calcule_taxa_imposto(){
+        var preco_total = preco_telemove + (preco_telemove * taxa_imposto);
+
+        return  preco_total;
+    }
+
+    preco_total = calcule_taxa_imposto();
+    // console.log(preco_total);
+
+    while(saldo_banco > limite_gasto && saldo_banco >= limite_gasto - preco_telemove - preco_acessorio){
+
+        if(saldo_banco > preco_total){
+            phones += 1;
+
+            saldo_banco = saldo_banco - preco_total;
+            gasto =  gasto + preco_total;
+
+            if(saldo_banco > limite_gasto && saldo_banco >= limite_gasto - preco_acessorio){
+                acessorios += 1;
+
+                saldo_banco = saldo_banco - preco_acessorio;
+                gasto =  gasto + preco_acessorio;
+            }
+        }
+
+        console.log(saldo_banco + ": Saldo Atual ");
+        console.log(gasto  + ": Saldo Gasto ");
+        console.log(phones + " Telefone e " + acessorios + " acessorios !!!");
+    }
+
+
+
+    calcule_taxa_imposto();
+
+}
+
+
+praticeExercice();
+
 
 
 
