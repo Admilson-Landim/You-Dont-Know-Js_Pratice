@@ -5,14 +5,14 @@ const TAX_RATE = 0.08;
 
 
 function antesFuncção() {
-    /* 
+     
     a = "21";
     b  = a + 3;
     c = Number(a);
 
     console.log(b);
 
-    /* alert(b);
+     alert(b);
 
     var  age = prompt("Please tell your age: ");  // solicitar um entrada na tela
 
@@ -44,7 +44,7 @@ function antesFuncção() {
         console.log("Não, obrigado !!!"); 
     }
 
-    */
+    
 }
 
 
@@ -153,7 +153,7 @@ function praticeExercice(){
 }
 
 
-praticeExercice();
+// praticeExercice();
 
 
 
