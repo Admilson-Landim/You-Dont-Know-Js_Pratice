@@ -125,6 +125,8 @@ function praticeExercice(){
     preco_total = calcule_taxa_imposto();
     // console.log(preco_total);
 
+
+    // validando se saldo da para gastar » se da para comprar telefone e acessorios e não ultrapassar limite de gasto !!!
     while(saldo_banco > limite_gasto && saldo_banco >= limite_gasto - preco_telemove - preco_acessorio){
 
         if(saldo_banco > preco_total){
