@@ -84,8 +84,6 @@ var amount = 99.99;
 amount = calculateFinalPurchaseAmount(amount);
 
 //console.log(amount);
-
-
 function outer(){
     var a = 1;
 
