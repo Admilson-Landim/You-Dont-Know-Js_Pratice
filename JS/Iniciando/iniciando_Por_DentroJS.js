@@ -28,9 +28,59 @@ function getTypeName(){
     g = {b: "b", c: "c", d: "d", e: "e", f: "f", g: "g"};
     typeof g;
     console.log("type g: " + typeof g);
+
+    h = 'abc';
+    typeof h;
+    console.log("type h: " + typeof h);
     
 }
 
 
-getTypeName();
+function getObject(){
+    var obj = {
+        a: "hello world",
+        b: 42,
+        c: false
+    };
+     
+    obj.a;
+    console.log("a: " + obj.a);
+    obj.b;
+    console.log("b: " + obj.b);
+    obj.c;
+    console.log("c: " + obj.c);
+   
+    console.log("------------------------------------------");
+
+    obj["a"];
+    console.log("a: " + obj["a"]);
+    obj["b"];
+    console.log("b: " + obj["b"]);
+    obj["c"];
+    console.log("c: " + obj["c"]);
+
+    console.log("");
+    console.log("»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»");
+    // -----------------------------------------
+
+    var obj01 = {
+        a: "Hello People !!!",
+        b: 42
+    };
+
+    var b = "a";
+
+    console.log("b: " + obj01[b]);
+
+    obj[b];
+    console.log("obj01[b]: " + obj01[b]);
+
+    obj01["b"];
+    console.log("obj01['b'] " + obj01["b"]);
+}
+
+
+getObject();
+
+ //getTypeName();
 
