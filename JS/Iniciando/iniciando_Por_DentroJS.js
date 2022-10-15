@@ -50,8 +50,8 @@ function getObject(){
     obj.c;
     console.log("c: " + obj.c);
    
-    console.log("------------------------------------------");
-
+    console.log("");
+    console.log("»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»");
     obj["a"];
     console.log("a: " + obj["a"]);
     obj["b"];
@@ -65,10 +65,11 @@ function getObject(){
 
     var obj01 = {
         a: "Hello People !!!",
-        b: 42
+        b: 42,
+        c: "b"
     };
 
-    var b = "a";
+    var b = "c";
 
     console.log("b: " + obj01[b]);
 
@@ -83,4 +84,6 @@ function getObject(){
 getObject();
 
  //getTypeName();
+
+ // Arrays  ----- Cont...
 
