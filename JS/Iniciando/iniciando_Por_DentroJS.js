@@ -81,9 +81,53 @@ function getObject(){
 }
 
 
-getObject();
+function arrayExemple(){
+    var arr = [
+        "hello world",
+        42,
+        false,
+        "tr"
+    ];
 
- //getTypeName();
+    arr[0];
+    console.log(" " + arr[0]);
+    arr[1];
+    console.log(" " + arr[1]);
+    arr[2];
+    console.log(" " + arr[2]);
+
+    typeof arr;
+    console.log("»»» " + typeof arr);
+
+}
+
+function tipoNativo(){
+    function foo(){
+        return 42;
+    }
+
+    foo.bar = "Hello world!";
+
+    console.log("foo:::: " + typeof foo);
+    console.log("foo_funtion:::: " + typeof foo());
+    console.log("foo.bar:::: " + typeof foo.bar);
+    console.log(" " );
+    console.log("»»»»»»»»»»»»»»»»»»»»»»»»»»»»»");
+    console.log("foo.br___ " +  foo.bar);
+    console.log("foo___ " + foo);
+    console.log("foo_function__ " + foo());
+
+}
+
+
+var a = "hello world!";
+var b = 3.14159;
+
+console.log(" " + a.length);
+console.log(" " + a.toUpperCase());
+console.log(" " + b.toFixed(4));
+
+ //getTypeName();  getObject();  arrayExemple(); 
 
  // Arrays  ----- Cont...  hoji nada...
 
