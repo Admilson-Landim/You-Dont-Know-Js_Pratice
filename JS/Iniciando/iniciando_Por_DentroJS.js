@@ -188,6 +188,7 @@ function desIgualdade() {
     var a = "41";
     var b = 42;
     var c = "43";
+    var cc = "ab"
     var d = undefined;
     var e = null;
     var f = "eu hien, JS !!!"
@@ -216,5 +217,5 @@ desIgualdade();
 
  //getTypeName();  getObject();  arrayExemple(); 
 
- // Igualdade  ----- 
+ // desIgualdade  ----- 
 
