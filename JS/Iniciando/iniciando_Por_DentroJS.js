@@ -117,17 +117,44 @@ function tipoNativo(){
     console.log("foo___ " + foo);
     console.log("foo_function__ " + foo());
 
+
+    var a = "hello world!";
+    var b = 3.14159;
+
+    console.log(" " + a.length);
+    console.log(" " + a.toUpperCase());
+    console.log(" " + b.toFixed(4));
+
+
 }
 
+function coercao() {   
+    var a = "42";
+    var b = Number(a);
+    
+    console.log("a:::: " + a);
+    console.log("b:::: " + b);
 
-var a = "hello world!";
-var b = 3.14159;
 
-console.log(" " + a.length);
-console.log(" " + a.toUpperCase());
-console.log(" " + b.toFixed(4));
+    var c = "4233";
+    var d = c * 1;
+    
+    console.log("c:::: " + c);
+    console.log("d:::: " + d);
+}
+
+function igualdade() {
+    var a = "42";
+    var b = 42;
+
+
+    console.log( a == b);
+    console.log( a === b);
+}
+
+igualdade();
 
  //getTypeName();  getObject();  arrayExemple(); 
 
- // Arrays  ----- Cont...  hoji nada...
+ // Igualdade  ----- 
 
