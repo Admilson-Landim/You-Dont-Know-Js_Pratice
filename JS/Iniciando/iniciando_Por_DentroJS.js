@@ -35,6 +35,8 @@ function getTypeName(){
     
 }
 
+// getTypeName();
+
 
 function getObject(){
     var obj = {
@@ -146,13 +148,71 @@ function coercao() {
 function igualdade() {
     var a = "42";
     var b = 42;
+    var c = "41";
+    var d = undefined;
+    var e = null;
+    var f = "eu hien, JS !!!"
+    var g = "";
+    var h;
+    var i = 0;
+    var j = null
+    var k = -42;
+    var l = true;
+    var m = false;
+    var n = [1, 2, 3];
+    var o = [1, 2, 3];
+    var p = "1,2,3";
+ 
 
+    //console.log( a == b);
+    //console.log( a === b);
+    //console.log("»»»»»»»»»»»»»»");
+    console.log( new String("a") == "a" && "a" == new String("a"));
+    console.log( new String("a") == new String("a"));
+    console.log( "a" == new String("a"));
 
-    console.log( a == b);
-    console.log( a === b);
+    console.log("»»»»»»»»»»»»»»");
+    console.log( n == p);
+    console.log( o == p);
+    console.log( n == o);
+    console.log( n[0] == o[0]);
+    console.log( p[0] == o[0]);
+
+    
 }
 
-igualdade();
+// igualdade();
+
+
+function desIgualdade() {
+    var a = "41";
+    var b = 42;
+    var c = "43";
+    var d = undefined;
+    var e = null;
+    var f = "eu hien, JS !!!"
+    var g = "";
+    var h;
+    var i = 0;
+    var j = null
+    var k = -42;
+    var l = true;
+    var m = false;
+    var n = [1, 2, 3];
+    var o = [1, 2, 3];
+    var p = "1,2,3";
+ 
+
+    console.log("»»»»»»»»»»»»»»");
+    console.log( a < b);
+    console.log( a > b);
+    console.log( a == b);
+    
+
+    
+}
+
+desIgualdade();
 
  //getTypeName();  getObject();  arrayExemple(); 
 
