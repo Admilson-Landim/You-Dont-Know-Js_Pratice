@@ -213,9 +213,38 @@ function desIgualdade() {
     
 }
 
-desIgualdade();
+//desIgualdade();
 
  //getTypeName();  getObject();  arrayExemple(); 
 
  // desIgualdade  ----- 
 
+
+ function CompilerOnline_00(){
+    // Online Javascript Editor for free
+    // Write, Edit and Run your Javascript code using JS Online Compiler
+
+    console.log("******************************************");
+
+
+    land = [12, ['landim', 10, 'calha'], ['Admilson', 'landim', 'de', 'Pina', ["werty", "STP"], [] ], ['Calheta', 'Praia'] ]
+
+    console.log(land)
+
+    console.log("******************************************");
+    console.log(land[0])
+    console.log(land[1])
+    console.log(land[2])
+    console.log(land[3])
+
+    console.log("******************************************");
+
+
+    console.log(land[2][0])
+    console.log(land[2][4])
+    console.log(land[2][4][1])
+
+ }
+
+
+CompilerOnline_00()
