@@ -32,10 +32,12 @@ function getTypeName(){
     h = 'abc';
     typeof h;
     console.log("type h: " + typeof h);
+
+    console.log("type i: " + typeof "fyy");
     
 }
 
-// getTypeName();
+ getTypeName();
 
 
 function getObject(){
