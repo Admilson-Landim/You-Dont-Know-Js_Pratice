@@ -183,7 +183,7 @@ function igualdade() {
     
 }
 
-// igualdade();
+ igualdade();
 
 
 function desIgualdade() {
